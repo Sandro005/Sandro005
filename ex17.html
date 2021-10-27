@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ex17" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>ex17</title>
+
+    <script language="javascript">
+        function tabuada() {
+            var n, tab;
+            n = parseFloat(document.getElementById("tabuada").value);
+            
+        }
+    </script>
+</head>
+<body>
+    <p><h1>17. Solicitar a digitação de um valor positivo. Após a digitação, exibir a tabuada do valor solicitado, no intervalo de um a dez.</h1></p>
+    
+    <form name="tauba">
+        Digite o número da tabuada: <input type="text" id="tabuada">
+    </form>
+    <div class = "botao"><input type="button" value="Enviar" onclick="tabuada();"></div>
+    <script language="javascript">
+        function tabuada(){
+        n = parseFloat(document.getElementById("tabuada").value);
+        document.writeln("<table border = '1' align = 'center'>")    
+        for (var i = 1; i < 11; i++) {
+            document.writeln("<tr>")
+                document.writeln("<td>" + n + " x " + i + " = " + n * i + "</td>"); 
+            document.writeln("</tr>")
+        }
+        }
+    </script>
+
+</body>
+</html>
